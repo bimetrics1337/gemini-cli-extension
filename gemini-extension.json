@@ -1,0 +1,21 @@
+{
+  "name": "bimetrics",
+  "version": "1.0.0",
+  "description": "Buchhaltung, Belege, E-Rechnungen, Bankumsätze, Mahnwesen, Kassenbuch und DATEV-Export für Deutschland über den bimetrics-MCP-Server.",
+  "mcpServers": {
+    "bimetrics": {
+      "httpUrl": "https://app.bimetrics.de/mcp",
+      "oauth": {
+        "enabled": true,
+        "authProviderType": "dynamic_discovery",
+        "clientId": "bimetrics-gemini-cli",
+        "redirectUri": "http://localhost:7777/oauth/callback",
+        "scopes": [
+          "mcp:read",
+          "mcp:write",
+          "offline_access"
+        ]
+      }
+    }
+  }
+}
